@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ssm-to-fargate:
+    image: enokawa/ssm-to-fargate
+    container_name: ssm-to-fargate
+    environment:
+      - SSM_AGENT_CODE
+      - SSM_AGENT_ID
+      - AWS_DEFAULT_REGION
